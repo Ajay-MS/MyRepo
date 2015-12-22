@@ -17,10 +17,10 @@ param
 
 function Download-Files
 {
-    $source="https://github.com/pavanadepu2/MyRepo/blob/master/makecert.exe"
+    $source="https://github.com/pavanadepu2/MyRepo/raw/master/makecert.exe"
     Invoke-WebRequest $source -OutFile .\makecert.exe -ErrorAction Stop
 
-    $source="https://github.com/pavanadepu2/MyRepo/blob/master/winrmconf.cmd"
+    $source="https://raw.githubusercontent.com/pavanadepu2/MyRepo/master/winrmconf.cmd"
     Invoke-WebRequest $source -OutFile .\winrmconf.cmd -ErrorAction Stop
 }
 
