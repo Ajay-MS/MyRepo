@@ -17,10 +17,10 @@ param
 
 function Download-Files
 {
-    $source="https://azurergtaskstorage.blob.core.windows.net/winrm/makecert.exe"
+    $source="https://github.com/pavanadepu2/MyRepo/blob/master/makecert.exe"
     Invoke-WebRequest $source -OutFile .\makecert.exe -ErrorAction Stop
 
-    $source="https://azurergtaskstorage.blob.core.windows.net/winrm/winrmconf.cmd"
+    $source="https://github.com/pavanadepu2/MyRepo/blob/master/winrmconf.cmd"
     Invoke-WebRequest $source -OutFile .\winrmconf.cmd -ErrorAction Stop
 }
 
