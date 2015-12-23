@@ -82,7 +82,7 @@ function Add-FirewallException
 $winrmHttpsPort=5986
 
 # Download files
-Download-Files
+#Download-Files
 
 # Configure https listener
 Configure-WinRMHttpsListener $hostname $port
