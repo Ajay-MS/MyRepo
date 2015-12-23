@@ -15,15 +15,6 @@ param
 #                                             Helper Functions                                                                  #
 #################################################################################################################################
 
-function Download-Files
-{
-    $source="https://raw.githubusercontent.com/pavanadepu2/MyRepo/master/makecert.exe"
-    Invoke-WebRequest $source -OutFile .\makecert.exe -ErrorAction Stop
-
-    $source="https://raw.githubusercontent.com/pavanadepu2/MyRepo/master/winrmconf.cmd"
-    Invoke-WebRequest $source -OutFile .\winrmconf.cmd -ErrorAction Stop
-}
-
 function Delete-WinRMListener
 {
     $config = Winrm enumerate winrm/config/listener
@@ -80,9 +71,6 @@ function Add-FirewallException
 #################################################################################################################################
 
 $winrmHttpsPort=5986
-
-# Download files
-#Download-Files
 
 # Configure https listener
 Configure-WinRMHttpsListener $hostname $port
