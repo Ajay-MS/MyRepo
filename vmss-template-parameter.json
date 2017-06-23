@@ -1,0 +1,42 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vmSku": {
+      "value": "Standard_A1"
+    },
+    "windowsOSVersion": {
+      "value": "2012-R2-Datacenter"
+    },
+    "vmssName": {
+      "value": "padepuvmss"
+    },
+    "instanceCount": {
+      "value": 1
+    },
+    "adminUsername": {
+      "value": "testuser"
+    },
+    "adminPassword": {
+      "value": "Password123$"
+    },
+	"VSTSAccountName": {
+		"value": "padepu1"
+	},
+	"TeamProject": {
+		"value": "MyFirstProject"  
+	},
+	"MachineGroup": {
+		"value": "ScaleDG"  
+	},
+	"Tags": {
+		"value": "Web"  
+	},
+  "AgentName": {
+		"value": "padeputestagent"  
+	},
+	"PATToken": {
+		"value": "4pztdkc7t2zspxxc2cbsyimkqn5rbcwny3hk475cfc4imrsurf2a"  
+	}
+  }
+}
