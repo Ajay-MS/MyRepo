@@ -243,13 +243,13 @@
                   "publisher": "Microsoft.Compute",
                   "settings": {
                     "fileUris": [
-                      "https://padepusa.blob.core.windows.net/agentconfig/AgentConfigScript.ps1"
+                      "https://ajyablob.blob.core.windows.net/test/ConfigureMultipleDeploymentGroup.ps1"
                     ]
                   },
                   "typeHandlerVersion": "1.8",
                   "autoUpgradeMinorVersion": true,
                   "protectedSettings": {
-                    "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File AgentConfigScript.ps1"
+                    "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File ConfigureMultipleDeploymentGroup.ps1 [parameters('virtualMachineIndex')]"
                   },
                   "type": "CustomScriptExtension"
                 }

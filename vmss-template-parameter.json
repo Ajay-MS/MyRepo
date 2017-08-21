@@ -9,7 +9,7 @@
       "value": "2012-R2-Datacenter"
     },
     "vmssName": {
-      "value": "padepuvmss"
+      "value": "ajyaVM"
     },
     "instanceCount": {
       "value": 1
@@ -18,25 +18,28 @@
       "value": "testuser"
     },
     "adminPassword": {
-      "value": "Password123$"
+      "value": "Password~1"
     },
-	"VSTSAccountName": {
-		"value": "padepu1"
-	},
-	"TeamProject": {
-		"value": "MyFirstProject"  
-	},
-	"MachineGroup": {
-		"value": "ScaleDG"  
-	},
-	"Tags": {
-		"value": "Web"  
-	},
-  "AgentName": {
-		"value": "padeputestagent"  
-	},
-	"PATToken": {
-		"value": "4pztdkc7t2zspxxc2cbsyimkqn5rbcwny3hk475cfc4imrsurf2a"  
-	}
+    "VSTSAccountName": {
+      "value": "ajya"
+    },
+    "TeamProject": {
+      "value": "MyFirstProject"
+    },
+    "MachineGroup": {
+      "value": "deploymentGroup"
+    },
+    "Tags": {
+      "value": "Web"
+    },
+    "AgentName": {
+      "value": "ajyaAgent"
+    },
+    "PATToken": {
+      "value": "4pztdkc7t2zspxxc2cbsyimkqn5rbcwny3hk475cfc4imrsurf2a"
+    },
+    "virtualMachineIndex": {
+      "value": 1
+    }
   }
 }
